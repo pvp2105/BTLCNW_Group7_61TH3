@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feed | LinkedIn</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/home.css"/>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <div class="container-fluid">
+                    <a class="nav-logo" href="#"><button type="button" class="btn btn-primary">
+                            <span>Linked</span>
+                            <i class="bi bi-linkedin" style="color: white"></i></button></a>
+                    <button class="navbar-toggler" type="button">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider" />
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled">Disabled</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                            <button class="btn btn-outline-success" type="submit">
+                                Search
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="container-fluid" style="background: #f3f2ef">
+        <div class="row" style="height: 24px">
+            <div class="col-md-12"></div>
+        </div>
+        <div class="main-about row ms-5 me-5 ps-5">
+            <div class="sidebar col-md-2 ps-2">
+                <div class="my-sidebar list-group bg-white">
+                    <div class="feed-identity-module">
+                        <a href="#" class="profile">
+                            <div class="avartar col-md-12 text-center" style="background-image: url('https://static-exp1.licdn.com/sc/h/55k1z8997gh8dwtihm11aajyq');">
+                                <img class="my-avartar col-md-5 mt-3"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNL_ZnOTpXSvhf1UaK7beHey2BX42U6solRA&usqp=CAU" />
+                            </div>
+                            <p class="identity-name mt-3 t-black text-center">
+                                Phạm Văn Phú
+                            </p>
+                        </a>
+                        <p class="identity-headline text-center">--</p>
+                    </div>
+
+                    <div class="list-group-item">
+                        <a href="#" class="list-identity">
+                            <div class="row text-align-left feed-module">
+                                <div class="col-md-10 connection p-2">
+                                    <div style="color: rgb(119, 108, 108)">Connections</div>
+                                    <div>Grow your network</div>
+                                </div>
+                                <i class="col-md-2 bi bi-person-plus-fill"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-group-item">
+                        <a href="#" class="list-identity">
+                            <div class="row text-align-left feed-module">
+                                <div class="col-md-10 connection p-2">
+                                    <div style="color: rgb(119, 108, 108)">
+                                        Access exclusive tools & insights
+                                    </div>
+                                    <div class="premium">
+                                        <i class="bi bi-gem bg-warning"></i>
+                                        Try Premium for free
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-group-item">
+                        <a href="#" class="list-identity">
+                            <div class="row text-align-left feed-module">
+                                <div class="col-md-10 connection p-2">
+                                    <i class="bi bi-bookmark-fill"></i> 
+                                    <span>My items</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="my-sidebar sub-group list-group bg-white mt-1">
+                    <div class="list-group-item">
+                        <a href="#" class="list-identity">
+                            <div class="row text-align-left">
+                                <div class="col-md-10 sidebar-more p-2">
+                                    <span style="color: blue;">Groups</span>
+                                </div>
+                                <div class="col-md-10 sidebar-more p-2">
+                                    <span style="color: blue;">Events</span>
+                                    <button class=" bt-event-plus"><i class="bi bi-plus-lg float-end" style="font-size: 15px;"></i></button>
+                                </div>
+                                <div class="col-md-10 sidebar-more p-2">
+                                    <span style="color: blue;">Followed Hashtags</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-group-item">
+                        <a href="#" class="list-identity">
+                            <div class="row text-align-center feed-module">
+                                <span class="text-center"style="color: rgb(119, 108, 108)">Discover More</span> 
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main col-md-5 ms-3">
+                <div class="post list-group bg-white row ">
+                    <div class="col-md-12 m-2">
+                        <span class="start-post" style="text: center;">
+                            <a href=""><img class="col-md-1 mt-3 avt-friend"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNL_ZnOTpXSvhf1UaK7beHey2BX42U6solRA&amp;usqp=CAU"></a>
+                        </span>
+                        <span class="ms-2">
+                            <button type="button" class="btn-start btn-block btn-lg col-md-10">
+                                <p class="mt-3" style="text-align: left; font-size: 14px; color:rgb(124, 107, 107) ">Start a posts</p> 
+                            </button>
+                        </span>
+                    </div>
+                    <div class="col-md-12 m-2">
+                        <span class="share-box col-md-2 ms-3">
+                            <button class="" style="background: white; border: white; display: inline-flex;">
+                                <i class="bi bi-card-image text-primary"></i>
+                                <div class="ms-3">Photos</div>
+                            </button>
+                        </span>
+                        <span class="share-box col-md-2 ms-3">
+                            <button class="" style="background: white; border: white; display: inline-flex;">
+                                <i class="bi bi-youtube text-success"></i>
+                                <div class="ms-3">Video</div>
+                            </button>
+                        </span>
+                        <span class="share-box col-md-2 ms-3">
+                            <button class="" style="background: white; border: white; display: inline-flex;">
+                                <i class="bi bi-calendar-date text-warning"></i>
+                                <div class="ms-3">Events</div>
+                            </button>
+                        </span>
+                        <span class="share-box col-md-2 ms-3">
+                            <button class="" style="background: white; border: white; display: inline-flex;">
+                                <i class="bi bi-text-indent-left text-danger"></i>
+                                <div class="ms-3">Write article</div>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+                <hr>
+                <div class="feed-share list-group bg-white row ">
+                    <div class="col-md-12 m-2 ">
+                        <div class="row share-actor">
+                            <div class="avt-actor col-md-2">
+                                <a href=""><img class="img-actor" src="https://media-exp1.licdn.com/dms/image/C4D03AQHqRRhVsnaziA/profile-displayphoto-shrink_100_100/0/1626063510328?e=1645660800&v=beta&t=3kDguR2rl7aGCMW6BevlHsA7ReK05VlWbKD2dMOsQww" alt=""></a>
+                            </div>
+                            <div class="col-md-10">
+                                <span>
+                                    <a href="" style="text-decoration: none; color: #000;">Bill Gates</a>
+                                    <i class="bi bi-linkedin" style="color: blue"></i></a>
+                                    <a href="" style="text-decoration: none; color: rgb(119, 108, 108);">Following</a>
+                                </span>
+                                <div class="descrip ">
+                                    <p>Co-chair, Bill & Melinda Gates Foundation</p>
+                                </div>
+                            </div>
+                            <div class="row cap-post">
+                                <p>Understanding how the connections in our brains give rise to consciousness and our ability to learn may help lead to great breakthroughs in the way we solve the world’s hardest problems.</p>
+                            </div>
+                            <div class="row content-post">
+                                <video src="/assets/Videos/The Truck- Bill Gates.mp45"  autoplay controls></video>
+                            </div>
+                            <div class="row status mt-1 mb-1">
+                                <span>
+                                    <i class="bi bi-hand-thumbs-up-fill" style="color: blue;"></i>
+                                    <i class="bi bi-heart-fill" style="color: rgb(221, 30, 30);"></i>
+                                    <i class="bi bi-lightbulb-fill " style="color: rgb(252, 252, 13);"> </i>
+                                    <span style="color: rgb(157, 182, 180);">12656</span>
+                                    <a href="#" class="cout-cmt">442 comment</a>
+                                </span>
+                                <hr>
+                            </div>
+                            <div class="row-feel">
+                                <span>
+                                    <button href="" class="btn-status">
+                                        <i class="bi bi-hand-thumbs-up"></i> Like
+                                        <i class="nav-arrow-down ti-angle-down"></i>
+                                    </button>
+                                    <span class="row-like">
+                                        <span >
+                                            <button href="" class="btn-sublike">
+                                                <i class="bi bi-hand-thumbs-up-fill" style="color: blue;"></i> 
+                                            </button>
+                                        </span>
+                                        <span >
+                                            <button href="" class="btn-sublike">
+                                                <i class="bi bi-emoji-heart-eyes-fill" style="color: rgb(10, 233, 40);"></i> 
+                                            </button>
+                                        </span>
+                                        <span >
+                                            <button href="" class="btn-sublike">
+                                                <i class="bi bi-heart-fill" style="color: rgb(180, 21, 21);"></i>
+                                            </button>
+                                        </span>
+                                        <span >
+                                            <button href="" class="btn-sublike">
+                                                <i class="bi bi-lightbulb-fill" style="color: rgb(252, 252, 13);"></i>
+                                            </button>
+                                        </span>
+                                    </span>
+                                </span>
+                                <span>
+                                    <button href="" class="btn-status">
+                                        <i class="bi bi-chat-left-text"></i> Comment
+                                    </button>
+                                </span>
+                                <span>
+                                    <button href="" class="btn-status">
+                                        <i class="bi bi-arrow-90deg-right"></i> Share
+                                    </button>
+                                </span>
+                                <span>
+                                    <button href="" class="btn-status">
+                                        <i class="bi bi-send-fill"></i> Send
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed-share list-group bg-white row mt-2">
+                    <div class="col-md-12 m-2 ">
+                        <p style="font-size: 14px; color: rgb(124, 107, 107);">
+                            Add to your Friends
+                            <hr>
+                        </p>
+                        <div class="list-friends mt-2" >
+                            <a class="col-md-2" href="" style="text-decoration: none; color: #000;">
+                                <img class="avt-friend" src="https://media-exp1.licdn.com/dms/image/C560BAQFkDzx_7dqq3A/company-logo_100_100/0/1519902995023?e=1648684800&v=beta&t=oVdH-VqT_ge8AGBvJBVaiZjH8_d3ehNrrsEHT60HTVk" alt="">
+                                <span>Spotify
+                                    <span style="color: rgb(96, 131, 128); font-size: 12px">8,996 Folowers</span>
+                                </span>
+                                <span style="float: right; line-height: 40px; margin-right: 5px;">
+                                    <button href="" class="btn-status" style="color: blue;">
+                                        <i class="bi bi-plus-circle"></i>  Follow
+                                    </button>
+                                </span>
+                            </a>
+                            <hr>
+                        </div>
+                        <div class="list-friends mt-2">
+                            <a class="col-md-2" href="" style="text-decoration: none; color: #000;">
+                                <img class="avt-friend" src="https://media-exp1.licdn.com/dms/image/C560BAQFckBxRnPg53Q/company-logo_200_200/0/1561999707114?e=1648684800&v=beta&t=MJSvvgGEZdc9UyxIe0OPcx16Wpblipu7Fc8u96nz6rU" alt="">
+                                <span>Nike
+                                    <span style="color: rgb(96, 131, 128); font-size: 12px">996 Folowers</span>
+                                </span>
+                                <span style="float: right; line-height: 40px; margin-right: 5px;">
+                                    <button href="" class="btn-status" style="color: blue;">
+                                        <i class="bi bi-plus-circle"></i>  Follow
+                                    </button>
+                                </span>
+                            </a>
+                            <hr>
+                        </div>
+                        <div class="list-friends mt-2">
+                            <a class="col-md-2" href="" style="text-decoration: none; color: #000;">
+                                <img class="avt-friend" src="https://media-exp1.licdn.com/dms/image/C4E0BAQEVb0ZISWk8vQ/company-logo_100_100/0/1519896425167?e=1648684800&v=beta&t=o3QNgA9vjTOVQvMsyggm5u2vCQJMpy6koaHtMt_xaf0" alt="">
+                                <span>Netflix</span>
+                                <span style="float: right; line-height: 40px; margin-right: 5px;">
+                                    <button href="" class="btn-status" style="color: blue;">
+                                        <i class="bi bi-plus-circle"></i>  Follow
+                                    </button>
+                                </span>
+                            </a>
+                        </div> 
+                        <div class="list-group-item mt-2">
+                            <a href="#" class="list-identity">
+                                <div class="row text-align-center feed-module">
+                                    <span class="text-center" style="color: blue;">See More...</span> 
+                                </div>
+                            </a>
+                        </div>            
+                    </div>
+                </div>
+                <div class="feed-share list-group bg-white row mt-2">
+                    <div class="col-md-12 m-2 ">
+                        <div class="row share-actor">
+                            <div class="avt-actor  col-md-2">
+                                <a href=""><img class="img-actor" src="https://media-exp1.licdn.com/dms/image/C560BAQHTvZwCx4p2Qg/company-logo_100_100/0/1612205615891?e=1648684800&v=beta&t=Bg7klz_e_AdmdMcrIHDuo84ROCuuF5FWRaJ14MSJMmA" alt=""></a>
+                            </div>
+                            <div class="col-md-10">
+                                <span >
+                                    <a href="" style="text-decoration: none; color: #000;">Amazon</a>
+                                    <i class="bi bi-linkedin" style="color: blue"></i></a>
+                                    <a href="" style="text-decoration: none; color: rgb(119, 108, 108);">Following</a>                                  
+                                </span>
+                                <div class="descrip">
+                                    <p>Co-chair, Bill & Melinda Gates Foundation</p>
+                                </div>
+                                <div class="descrip">
+                                    <p>23,106,999 Follower</p>
+                                </div>
+                            </div>
+                            <div class="row cap-post">
+                                <p>Seema Degwekar is a Senior Principal Engineer, and has been at Amazon for 13 years. Learn more about her time at Amazon and the Principal Engineering Community here: 
+                                    <a href="https://amzn.to/2ZE6hKC">https://amzn.to/2ZE6hKC</a>
+                                </p> 
+                            </div>
+                            <div class="row content-post">
+                                <img src="https://media-exp1.licdn.com/dms/image/C5622AQG6jeV2MeteGg/feedshare-shrink_800/0/1640012403280?e=1643241600&v=beta&t=hKgvRtIfpWyI7fwM48UvwnRTvS6tTPa3xkaEaXVWuyw" alt="">
+                            </div>
+                            <div class="row status mt-1 mb-1">
+                                <span>
+                                    <i class="bi bi-hand-thumbs-up-fill" style="color: blue;"></i>
+                                    <i class="bi bi-heart-fill" style="color: rgb(221, 30, 30);"></i>
+                                    <i class="bi bi-lightbulb-fill " style="color: rgb(252, 252, 13);"> </i>
+                                    <span style="color: rgb(157, 182, 180);">1656</span>
+                                    <a href="#" class="cout-cmt">102 comment</a>
+                                </span>
+                                <hr>
+                            </div>
+                            <div class="row-feel">
+                                <span>
+                                    <button href="" class="btn-status">
+                                        <i class="bi bi-hand-thumbs-up"></i> Like
+                                        <i class="nav-arrow-down ti-angle-down"></i>
+                                    </button>
+                                    <span class="row-like">
+                                        <span >
+                                            <button href="" class="btn-sublike">
+                                                <i class="bi bi-hand-thumbs-up-fill" style="color: blue;"></i> 
+                                            </button>
+                                        </span>
+                                        <span >
+                                            <button href="" class="btn-sublike">
+                                                <i class="bi bi-emoji-heart-eyes-fill" style="color: rgb(10, 233, 40);"></i> 
+                                            </button>
+                                        </span>
+                                        <span >
+                                            <button href="" class="btn-sublike">
+                                                <i class="bi bi-heart-fill" style="color: rgb(180, 21, 21);"></i>
+                                            </button>
+                                        </span>
+                                        <span >
+                                            <button href="" class="btn-sublike">
+                                                <i class="bi bi-lightbulb-fill" style="color: rgb(252, 252, 13);"></i>
+                                            </button>
+                                        </span>
+                                    </span>
+                                </span>
+                                <span>
+                                    <button href="" class="btn-status">
+                                        <i class="bi bi-chat-left-text"></i> Comment
+                                    </button>
+                                </span>
+                                <span>
+                                    <button href="" class="btn-status">
+                                        <i class="bi bi-arrow-90deg-right"></i> Share
+                                    </button>
+                                </span>
+                                <span>
+                                    <button href="" class="btn-status">
+                                        <i class="bi bi-send-fill"></i> Send
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed-share list-group bg-white row mt-2">
+                    <div class="col-md-12 m-2 ">
+                        <div class="row share-actor">
+                            <div class="avt-actor  col-md-2">
+                                <a href=""><img class="img-actor" src="https://media-exp1.licdn.com/dms/image/C4D03AQHqRRhVsnaziA/profile-displayphoto-shrink_100_100/0/1626063510328?e=1645660800&v=beta&t=3kDguR2rl7aGCMW6BevlHsA7ReK05VlWbKD2dMOsQww" alt=""></a>
+                            </div>
+                            <div class="col-md-10">
+                                <span class="">
+                                    <a class="name-actor" href="" style="text-decoration: none; color: #000;">Bill Gates</a>
+                                    <i class="bi bi-linkedin" style="color: blue"></i></a>
+                                    <a href="" style="text-decoration: none; color: rgb(119, 108, 108);">Following</a>
+                                </span>
+                                <div class="descrip ">
+                                    <p>Co-chair, Bill & Melinda Gates Foundation</p>
+                                </div>
+                            </div>
+                            <div class="row cap-post">
+                                <p>One of my favorite holiday traditions is sharing books with family and friends. Here are 5 books I loved reading this year.</p>
+                            </div>
+                            <div class="row content-post">
+                                <a href="#" class="list-identity">
+                                    <div class="col-md-12 feed-module pb-2" style="background-color: rgb(253, 242, 242);">
+                                            <img style="width: 100%; padding: auto;" src="https://media-exp1.licdn.com/dms/image/sync/C4E27AQG46jzO1xMhgw/articleshare-shrink_800/0/1640314052145?e=1640419200&v=beta&t=WqbeOawR2QebU8U3DFj3Zz5oZcV1p6WMWLwIu7ZtvE8" alt="">
+                                            <span>5 books I loved reading this year</span> 
+                                        </div>
+                                    </a>
+                            </div>
+                            <div class="row status mt-1 mb-1">
+                                <span>
+                                    <i class="bi bi-hand-thumbs-up-fill" style="color: blue;"></i>
+                                    <i class="bi bi-heart-fill" style="color: rgb(221, 30, 30);"></i>
+                                    <i class="bi bi-lightbulb-fill " style="color: rgb(252, 252, 13);"> </i>
+                                    <span style="color: rgb(157, 182, 180);">12656</span>
+                                    <a href="#" class="cout-cmt">442 comment</a>
+                                </span>
+                                <hr>
+                            </div>
+                            <div class="row-feel">
+                                <span>
+                                    <button href="" class="btn-status">
+                                        <i class="bi bi-hand-thumbs-up"></i> Like
+                                        <i class="nav-arrow-down ti-angle-down"></i>
+                                    </button>
+                                    <span class="row-like">
+                                        <span >
+                                            <button href="" class="btn-sublike">
+                                                <i class="bi bi-hand-thumbs-up-fill" style="color: blue;"></i> 
+                                            </button>
+                                        </span>
+                                        <span >
+                                            <button href="" class="btn-sublike">
+                                                <i class="bi bi-emoji-heart-eyes-fill" style="color: rgb(10, 233, 40);"></i> 
+                                            </button>
+                                        </span>
+                                        <span >
+                                            <button href="" class="btn-sublike">
+                                                <i class="bi bi-heart-fill" style="color: rgb(180, 21, 21);"></i>
+                                            </button>
+                                        </span>
+                                        <span >
+                                            <button href="" class="btn-sublike">
+                                                <i class="bi bi-lightbulb-fill" style="color: rgb(252, 252, 13);"></i>
+                                            </button>
+                                        </span>
+                                    </span>
+                                </span>
+                                <span>
+                                    <button href="" class="btn-status">
+                                        <i class="bi bi-chat-left-text"></i> Comment
+                                    </button>
+                                </span>
+                                <span>
+                                    <button href="" class="btn-status">
+                                        <i class="bi bi-arrow-90deg-right"></i> Share
+                                    </button>
+                                </span>
+                                <span>
+                                    <button href="" class="btn-status">
+                                        <i class="bi bi-send-fill"></i> Send
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news col-md-3 ">
+                <div class="my-sidebar list-group bg-white">
+                    <div class="row mt-2 ms-2 me-2"><p>LinkedIn News <i class="bi bi-info-square-fill" style="float: right;"></i></p></div>
+                    <div class="row-news">
+                        <ul>
+                            <li class="content-new m-2">
+                                <a href="">Big biz fails slavery benchmark</a>
+                                <p style="color: rgb(96, 131, 128); font-size: 12px">11d ago - 1,789 readers</p>
+                            </li>
+                            <li class="content-new m-2">
+                                <a href="">Big biz fails slavery benchmark</a>
+                                <p style="color: rgb(96, 131, 128); font-size: 12px">11d ago - 1,789 readers</p>
+                            </li>
+                            <li class="content-new m-2">
+                                <a href="">Big biz fails slavery benchmark</a>
+                                <p style="color: rgb(96, 131, 128); font-size: 12px">11d ago - 1,789 readers</p>
+                            </li>
+                            <li class="content-new m-2">
+                                <a href="">Big biz fails slavery benchmark</a>
+                                <p style="color: rgb(96, 131, 128); font-size: 12px">11d ago - 1,789 readers</p>
+                            </li>
+                            <li class="content-new m-2">
+                                <a href="">Big biz fails slavery benchmark</a>
+                                <p style="color: rgb(96, 131, 128); font-size: 12px">11d ago - 1,789 readers</p>
+                            </li>
+                        </ul>
+                        <a href="#" class="list-identity">
+                            <div class="row text-align-center feed-module">
+                                <span class="text-center"style="color: rgb(119, 108, 108)">Discover More...</span> 
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="my-sidebar sub-group list-group bg-white mt-2">
+                    <div class="list-group-item">
+                        <div class="row promote">
+                            <div class="avt-actor  col-md-2">
+                                <a href=""><img class="img-promote" src="https://media-exp1.licdn.com/dms/image/C4D0EAQH2xCC4Wg_XnQ/rightRail-logo-shrink_100_100/0/1631007489046?e=1640426400&v=beta&t=15JE6k4b02CR221N-W_vzdzDQvdu3D6uYpCRSavo_Wk" alt=""></a>
+                            </div>
+                            <div class="col-md-9 ms-4" style="display: inline;">
+                                <span class="name-promote">
+                                    <a href="" style="text-decoration: none; color: #000;">Master of Cyber Security</a>
+                                </span>
+                                <div class="descrip ">
+                                    <p style="color: rgb(119, 108, 108); font-size: 12px;"> Developed with UNSW Canberra at the Australian Defence Force Academy (ADFA) </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row promote">
+                            <div class="avt-actor  col-md-2">
+                                <a href=""><img class="img-promote" src="https://media-exp1.licdn.com/dms/image/C560EAQHsb5Dj3yUo4Q/rightRail-logo-shrink_200_200/0/1630999185456?e=1640426400&v=beta&t=AruWWB0z9lTDSjFF_JKgAlErSYPxWJO8FAdLRFmqxCE" alt=""></a>
+                            </div>
+                            <div class="col-md-9 ms-4" style="display: inline;">
+                                <span class="name-promote">
+                                    <a href="" style="text-decoration: none; color: #000;">Study with RMIT Online</a>
+                                </span>
+                                <div class="descrip ">
+                                    <p style="color: rgb(119, 108, 108); font-size: 12px;">  5-Star QS Rated University. Learn From Industry Experts With RMIT Online.  </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row promote">
+                            <div class="avt-actor  col-md-2">
+                                <a href=""><img class="img-promote" src="https://media-exp1.licdn.com/dms/image/C560EAQGwD2NY88oWAA/rightRail-logo-shrink_100_100/0/1631005475475?e=1640426400&v=beta&t=wGwvNsdfH7Mr9709aslivtxj7SFG8tctZEAiGBFMdes" alt=""></a>
+                            </div>
+                            <div class="col-md-9 ms-4" style="display: inline;">
+                                <span class="name-promote">
+                                    <a href="" style="text-decoration: none; color: #000;">Go Agile</a>
+                                </span>
+                                <div class="descrip ">
+                                    <p style="color: rgb(119, 108, 108); font-size: 12px;">  Jira Software is free for up to 10 users – get your team started today </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <footer>
+                        <div class="footer-content mt-2">
+                            <div class="footer-text"><a href="">About</a></div>
+                            <div class="footer-text"><a href="">Accessibility</a></div >
+                            <div class="footer-text"><a href="">Help Center</a></div>
+                            <div class="footer-text"><a href="">Privacy & Term<i class="bi bi-chevron-down"></i></a></div>
+                            <div class="footer-text"><a href="">Ad Choies</a></div>
+                            <div class="footer-text"><a href="">Advertising</a></div>
+                            <div class="footer-text"><a href="">Buiness Services<i class="bi bi-chevron-down"></i></a></div>
+                            <div class="footer-text"><a href="">Get the LinedIn App</a></div>
+                            <div class="footer-text"><a href="">More</a></div>
+                        </div>
+                        
+                        <div class="footer-content">
+                            <span class="footer-last_text">
+                                <p>Linked<i class="bi bi-linkedin"></i></span>
+                                    <span style="color: rgb(119, 108, 108) ;" class="footer-text">LinkedIn Corporation © 2021
+                                </p>
+                            </span>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

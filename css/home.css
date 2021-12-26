@@ -1,0 +1,243 @@
+.my-avartar{
+    border-radius: 50%;
+}
+.identity-name{
+    color: black;
+}
+.profile{
+    text-decoration: none;
+    color: black;
+}
+.profile:hover p{
+    text-decoration: underline;
+}
+
+.sidebar-more{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.sidebar-more:hover{
+    text-decoration: underline;
+}
+
+.connection{
+    font-size: 12px;
+    font-weight: 600;
+}
+.list-identity{
+    text-decoration: none;
+    color: black;
+}
+.my-sidebar{
+    border-radius: 8px;
+}
+.avartar{
+    border-top-left-radius: 8px ;
+    border-top-right-radius: 8px ;
+}
+.btn-start{
+    border: 1px solid rgb(119, 108, 108);
+    border-radius: 35px;
+    background: white;
+    font-size: 14px;
+}
+.btn-start:hover{
+    background: rgb(240, 225, 225);
+
+}
+.bt-event-plus{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 35px;
+    float: right;
+}
+.sidebar{
+    margin-left: 5% ;
+}
+.feed-module:hover{
+    background-color: rgb(231, 218, 218);
+}
+
+.post{
+    border-radius: 8px;
+}
+
+.cap-post{
+    text-align: justify;
+    display: inline;
+    font-size: 14px;
+    line-height: 20px;
+}
+.cout-cmt{
+    color: rgb(157, 182, 180);
+    float: right;
+    text-decoration: none;
+}
+.row-feel > span{
+    display: inline-block; /*sap xep.row-feel theo hang ngang */ 
+}
+
+.row-feel span{
+    position: relative;
+}
+
+.row-feel  span  .btn-status{
+    background-color: white;
+    text-transform: uppercase;
+    border: white;
+}
+.row-feel > span:hover > .btn-status{
+    background-color: rgb(197, 218, 216) ;
+}
+.row-news  span  .btn-status{
+    background-color: white;
+    text-transform: uppercase;
+    border: white;
+}
+.row-news > span:hover > .btn-status{
+    background-color: rgb(197, 218, 216) ;
+}
+
+.profile .avartar{
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.row-feel span button{
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px ;
+    display: block;
+}
+.row-feel .sub-feel li:hover a,
+.row-feel > span:hover > a {   /* hover vào li để nếu di vào media vẫn giữ màu more */
+    color: #000;
+    background-color: #ccc;
+}
+.row-feel{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: initial;
+}
+.row-like{
+    grid-auto-flow: column;
+    justify-content: initial;
+}
+.row-feel  span  .btn-sublike{
+    background-color: white;
+    text-transform: uppercase;
+    border: white;
+}
+.row-like > span:hover > .btn-sublike{
+    color: #000;
+    background-color: #ccc;
+}
+
+
+.row-feel span:hover .row-like{
+    display: flex;     /*di vào li thì sub-feel hiện */
+}
+
+.row-feel .row-like{
+    display: none;
+    min-width: 160px;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+} 
+.row-feel .sub-feel a{
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+.row-feel .nav-arrow-down{
+    font-size: 14px;
+}
+
+#header .search-icon{
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+.my-actor{
+    display: grid;
+    grid-auto-flow: column ;
+}
+.avt-friend{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%
+}
+.img-actor{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%
+}
+.list-friends  span  .btn-status{
+    background-color: white;
+    text-transform: uppercase;
+    border: white;
+}
+
+.list-friends  span:hover  .btn-status{
+    background-color: rgb(197, 218, 216) ;
+}
+.row-news ul a{
+    text-decoration: none;
+    color: #000;
+}
+
+.row-news .content-new:hover{
+    background-color: rgb(197, 218, 216) ;
+}
+.row-news .content-new:hover a{
+    text-decoration: underline;
+}
+
+.img-promote{
+    width: 64px;
+    height: 64px;
+}
+
+.name-promote:hover {
+    text-decoration: underline;
+}
+
+footer {
+    padding: 0 10px;
+    display: inline-block;
+    background-color: #f3f2ef;
+  }
+  
+.footer-content {
+    margin-bottom: 10px;
+    text-align: center;
+}
+  
+.footer-text {
+    display: inline-block;
+    margin-right: 8px;
+}
+  
+.footer-last_text p {
+    color: blue;
+    font-size: 12px;
+  }
+  
+footer a {
+    color: #606060;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 0.8rem;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+
+.sub-group{
+    position:sticky;
+    position: -webkit-sticky;
+    top: 15px;
+}
