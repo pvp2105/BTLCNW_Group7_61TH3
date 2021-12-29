@@ -15,56 +15,101 @@
 <body>
     <header>
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white">
-                <div class="container-fluid">
-                    <a class="nav-logo" href="#"><button type="button" class="btn btn-primary">
-                            <span>Linked</span>
-                            <i class="bi bi-linkedin" style="color: white"></i></button></a>
-                    <button class="navbar-toggler" type="button">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+            <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+                <div class="container-fluid" style="width: 1100px">
+                    <a class="nav-logo" href="#">
+                        <button type="button" class="btn btn-primary" onclick="window.location.href='home.html'">
+                            <i class="bi bi-linkedin" style="color: rgb(248, 247, 247);">
+                                <link rel="stylesheet" href="home.html">
+                            </i>
+                        </button>
+                    </a>
+                    <nav class="navbar navbar-light bg-white">
+                        <div class="container-fluid">
+                            <div class="input-group flex-nowrap">
+                                <span class="input-group-text" id="addon-wrapping"><i class="bi bi-search"></i></span>
+                                <input type="text" class="form-control" placeholder="Search" aria-label="Username"
+                                    aria-describedby="addon-wrapping">
+                            </div>
+                        </div>
+                    </nav>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item" style="margin-left: 145px;">
+                                <a class="nav-link" href="home.html">
+                                    <i class="bi bi-house-door-fill" style="margin-left: 10px;">
+                                        <div style="font-style: normal;">Home</div>
+                                    </i>
+                                </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
+                                <a class="nav-link" href="#">
+                                    <i class="bi bi-people-fill" style="margin-left: 25px;">
+                                        <div style="font-style: normal;">My Network</div>
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Jobs.html">
+                                    <i class="bi bi-briefcase-fill" style="margin-left: 5px;">
+                                        <div style="font-style: normal;">Jobs</div>
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Messaging.html">
+
+                                    </i><i class="bi bi-send-fill" style="margin-left: 20px;">
+                                        <div style="font-style: normal;">Messaging</div>
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Notifications.html">
+
+                                    </i><i class="bi bi-bell-fill" style="margin-left: 20px;">
+                                        <div style="font-style: normal;">Notifications</div>
+                                    </i>
+                                </a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown
+                                    <i class="bi bi-person-circle"></i>
+                                    <div></div>
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
                                     <li>
-                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <hr class="dropdown-divider">
                                     </li>
-                                    <li>
-                                        <hr class="dropdown-divider" />
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">Something else here</a>
-                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled">Disabled</a>
+                            <hr>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-grid-3x3-gap"></i>
+                                </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
                             </li>
                         </ul>
-                        <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                            <button class="btn btn-outline-success" type="submit">
-                                Search
-                            </button>
-                        </form>
                     </div>
                 </div>
             </nav>
         </div>
     </header>
-    <main class="container-fluid" style="background: #f3f2ef">
+    <main class="container-fluid" style="background: #f3f2ef; margin-top: 76px;">
         <div class="row" style="height: 24px">
             <div class="col-md-12"></div>
         </div>
