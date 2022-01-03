@@ -1,0 +1,74 @@
+.card{
+	box-shadow: 0 4px 12px #00000026;
+}
+.card-body .form-control{
+	background-color: #e8f0fe;
+	border-radius: 4px;
+	font-size: 18px;
+}
+
+.form-check .btn-forgot{
+	border-radius: 28px;
+	background-color: #fff;
+	border: white;
+}
+.form-check .btn-forgot a{
+	text-decoration: none;
+	font-weight: 600;
+}
+.form-check .btn-forgot:hover{
+	text-decoration: underline;
+	background-color: #e8f0fe;
+}
+.btn-join{
+	border-radius: 28px;
+	background-color: #fff;
+	border: white;
+}
+.btn-join a{
+	text-decoration: none;
+	font-weight: 600;
+}
+.btn-join:hover{
+	text-decoration: underline;
+	background-color: #e8f0fe;
+}
+.btn-signin{
+	border-radius: 28px;
+	border: #fff;
+}
+.btn-signin:hover{
+	background-color: rgb(42, 42, 151);
+}
+.btn-signApple{
+	border-radius: 28px;
+	background-color: white;
+}
+.btn-signApple:hover{
+	background-color: #f5f2f0;
+}
+.list-footer{
+    align-items: center;
+    display: flex;
+   justify-content: center;
+}
+
+.list-footer li{
+    display: flex;
+    margin: 0 10px;
+    text-align: left;
+}
+.list-footer a{
+    display: inline;
+    font-size: 12px;
+    text-align: left;
+    color: #8a6868;
+}
+
+.list-footer li:hover{
+    text-decoration: underline;
+}
+
+.list-footer li a:hover{
+    color: blue;
+}
