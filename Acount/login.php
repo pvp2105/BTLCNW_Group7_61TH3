@@ -18,7 +18,7 @@
                     <button type="button" class="btn btn-white ms-5" style="color: #0a66c2;font-weight: 700; font-size: 25px;">
                             Linked<i class="bi bi-linkedin">
                             </i>
-                    </button>
+                    </button> 
                 </a>
         </div>
         </nav>
@@ -79,7 +79,7 @@
 				  <li><a href="" class="text-decoration-none link-dark">Cookie Policy</a></li>
 				  <li><a href="" class="text-decoration-none link-dark">Copyright Policy</a></li>
 				  <li><a href="" class="text-decoration-none link-dark">Send Feedback</a></li>
-				  <li><a href="" class="text-decoration-none link-dark">Language</a></li>
+				  <li><a href="" class="text-decoration-none link-dark">Language</a></li> /*l*/
 			  </ul>
 		  </div>
 	  </div>
