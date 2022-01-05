@@ -1,244 +1,383 @@
-.my-avartar{
-    border-radius: 50%;
+.navbar .form-control {
+  font-size: 14px;
+  width: 280px;
+  background-color: #eef3f8;
+  border-color: white;
 }
-.identity-name{
-    color: black;
-}
-.profile{
-    text-decoration: none;
-    color: black;
-}
-.profile:hover p{
-    text-decoration: underline;
+.navbar .input-group-text {
+  background-color: #eef3f8;
+  border-color: white;
 }
 
-.sidebar-more{
-    font-size: 12px;
-    font-weight: 600;
+.navbar-nav {
+  margin-left: auto;
+  min-height: 52px;
+}
+.navbar-nav .nav-item {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 18px;
+  text-align: center;
+}
+.navbar-nav .text-nav {
+  align-items: center;
+  font-size: 12px;
+  line-height: 18px;
 }
 
-.sidebar-more:hover{
-    text-decoration: underline;
+.my-avartar {
+  border-radius: 50%;
+}
+.identity-name {
+  color: black;
+}
+.profile {
+  text-decoration: none;
+  color: black;
+}
+.profile:hover p {
+  text-decoration: underline;
 }
 
-.connection{
-    font-size: 12px;
-    font-weight: 600;
-}
-.list-identity{
-    text-decoration: none;
-    color: black;
-}
-.my-sidebar{
-    border-radius: 8px;
-}
-.avartar{
-    border-top-left-radius: 8px ;
-    border-top-right-radius: 8px ;
-}
-.btn-start{
-    border: 1px solid rgb(119, 108, 108);
-    border-radius: 35px;
-    background: white;
-    font-size: 14px;
-}
-.btn-start:hover{
-    background: rgb(240, 225, 225);
-
-}
-.bt-event-plus{
-    background-color: white;
-    border: 1px solid white;
-    border-radius: 35px;
-    float: right;
-}
-.sidebar{
-    margin-left: 5% ;
-}
-.feed-module:hover{
-    background-color: rgb(231, 218, 218);
+.sidebar-more {
+  font-size: 12px;
+  font-weight: 600;
 }
 
-.post{
-    border-radius: 8px;
+.sidebar-more:hover {
+  text-decoration: underline;
 }
 
-.cap-post{
-    text-align: justify;
-    display: inline;
-    font-size: 14px;
-    line-height: 20px;
+.connection {
+  font-size: 12px;
+  font-weight: 600;
 }
-.cout-cmt{
-    color: rgb(157, 182, 180);
-    float: right;
-    text-decoration: none;
+.list-identity {
+  text-decoration: none;
+  color: black;
 }
-.row-feel > span{
-    display: inline-block; /*sap xep.row-feel theo hang ngang */ 
+.my-sidebar {
+  border-radius: 8px;
 }
-
-.row-feel span{
-    position: relative;
+.avartar {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
-
-.row-feel  span  .btn-status{
-    background-color: white;
-    text-transform: uppercase;
-    border: white;
+.btn-start {
+  border: 1px solid rgb(119, 108, 108);
+  border-radius: 35px;
+  background: white;
+  font-size: 14px;
 }
-.row-feel > span:hover > .btn-status{
-    background-color: rgb(197, 218, 216) ;
+.btn-start:hover {
+  background: rgb(240, 225, 225);
 }
-.row-news  span  .btn-status{
-    background-color: white;
-    text-transform: uppercase;
-    border: white;
+.bt-event-plus {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 35px;
+  float: right;
 }
-.row-news > span:hover > .btn-status{
-    background-color: rgb(197, 218, 216) ;
+.sidebar {
+  margin-left: 5%;
 }
-
-.profile .avartar{
-    background-position: 50% 50%;
-    background-size: cover;
+.feed-module:hover {
+  background-color: rgb(231, 218, 218);
 }
 
-.row-feel span button{
-    text-decoration: none;
-    line-height: 46px;
-    padding: 0 24px ;
-    display: block;
+.post {
+  border-radius: 8px;
+}
+
+.cap-post {
+  text-align: justify;
+  display: inline;
+  font-size: 14px;
+  line-height: 20px;
+}
+.cout-cmt {
+  color: rgb(157, 182, 180);
+  float: right;
+  text-decoration: none;
+}
+.row-feel > span {
+  display: inline-block; /*sap xep.row-feel theo hang ngang */
+}
+
+.row-feel span {
+  position: relative;
+}
+
+.row-feel span .btn-status {
+  background-color: white;
+  text-transform: uppercase;
+  border: white;
+}
+.row-feel > span:hover > .btn-status {
+  background-color: rgb(197, 218, 216);
+}
+.row-news span .btn-status {
+  background-color: white;
+  text-transform: uppercase;
+  border: white;
+}
+.row-news > span:hover > .btn-status {
+  background-color: rgb(197, 218, 216);
+}
+
+.profile .avartar {
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.row-feel span button {
+  text-decoration: none;
+  line-height: 46px;
+  padding: 0 24px;
+  display: block;
 }
 .row-feel .sub-feel li:hover a,
-.row-feel > span:hover > a {   /* hover vào li để nếu di vào media vẫn giữ màu more */
-    color: #000;
-    background-color: #ccc;
+.row-feel > span:hover > a {
+  /* hover vào li để nếu di vào media vẫn giữ màu more */
+  color: #000;
+  background-color: #ccc;
 }
-.row-feel{
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: initial;
+.row-feel {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: initial;
 }
-.row-like{
-    grid-auto-flow: column;
-    justify-content: initial;
+.row-like {
+  grid-auto-flow: column;
+  justify-content: initial;
 }
-.row-feel  span  .btn-sublike{
-    background-color: white;
-    text-transform: uppercase;
-    border: white;
+.row-feel span .btn-sublike {
+  background-color: white;
+  text-transform: uppercase;
+  border: white;
 }
-.row-like > span:hover > .btn-sublike{
-    color: #000;
-    background-color: #ccc;
-}
-
-
-.row-feel span:hover .row-like{
-    display: flex;     /*di vào li thì sub-feel hiện */
+.row-like > span:hover > .btn-sublike {
+  color: #000;
+  background-color: rgb(235, 190, 190);
 }
 
-.row-feel .row-like{
-    display: none;
-    min-width: 160px;
-    position: absolute;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-} 
-.row-feel .sub-feel a{
-    color: #000;
-    padding: 0 12px;
-    line-height: 38px;
+.row-feel span:hover .row-like {
+  display: flex; /*di vào li thì sub-feel hiện */
 }
 
-.row-feel .nav-arrow-down{
-    font-size: 14px;
+.row-feel .row-like {
+  display: none;
+  min-width: 160px;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.row-feel .sub-feel a {
+  color: #000;
+  padding: 0 12px;
+  line-height: 38px;
 }
 
-#header .search-icon{
-    color: #fff;
-    font-size: 20px;
-    line-height: 46px;
-}
-.my-actor{
-    display: grid;
-    grid-auto-flow: column ;
-}
-.avt-friend{
-    width: 48px;
-    height: 48px;
-    border-radius: 50%
-}
-.img-actor{
-    width: 64px;
-    height: 64px;
-    border-radius: 50%
-}
-.list-friends  span  .btn-status{
-    background-color: white;
-    text-transform: uppercase;
-    border: white;
+.row-feel .nav-arrow-down {
+  font-size: 14px;
 }
 
-.list-friends  span:hover  .btn-status{
-    background-color: rgb(197, 218, 216) ;
+#header .search-icon {
+  color: #fff;
+  font-size: 20px;
+  line-height: 46px;
 }
-.row-news ul a{
-    text-decoration: none;
-    color: #000;
+.my-actor {
+  display: grid;
+  grid-auto-flow: column;
+}
+.avt-friend {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+.img-actor {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+.list-friends span .btn-status {
+  background-color: white;
+  text-transform: uppercase;
+  border: white;
 }
 
-.row-news .content-new:hover{
-    background-color: rgb(197, 218, 216) ;
+.list-friends span:hover .btn-status {
+  background-color: rgb(197, 218, 216);
 }
-.row-news .content-new:hover a{
-    text-decoration: underline;
+.row-news ul a {
+  text-decoration: none;
+  color: #000;
 }
 
-.img-promote{
-    width: 64px;
-    height: 64px;
+.row-news .content-new:hover {
+  background-color: rgb(197, 218, 216);
+}
+.row-news .content-new:hover a {
+  text-decoration: underline;
+}
+
+.img-promote {
+  width: 64px;
+  height: 64px;
 }
 
 .name-promote:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 footer {
-    padding: 0 10px;
-    display: inline-block;
-    background-color: #f3f2ef;
-  }
-  
+  padding: 0 10px;
+  display: inline-block;
+  background-color: #f3f2ef;
+}
+
 .footer-content {
-    margin-bottom: 10px;
-    text-align: center;
+  margin-bottom: 10px;
+  text-align: center;
 }
-  
+
 .footer-text {
-    display: inline-block;
-    margin-right: 8px;
+  display: inline-block;
+  margin-right: 8px;
 }
-  
+
 .footer-last_text p {
-    color: blue;
-    font-size: 12px;
-  }
-  
+  color: blue;
+  font-size: 12px;
+}
+
 footer a {
-    color: #606060;
-    text-decoration: none;
-    font-size: 13px;
-    line-height: 0.8rem;
+  color: #606060;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 0.8rem;
 }
-footer a:hover{
-    text-decoration: underline;
-}
-
-.sub-group{
-    position:sticky;
-    position: -webkit-sticky;
-    top: 15px;
+footer a:hover {
+  text-decoration: underline;
 }
 
+.sub-group {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 80px;
+}
+
+.btn-sublike:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+.dropdown-menu .list-group-item:hover {
+  background-color: #f3f2ef;
+}
+
+.text-decoration-none {
+  color: #7e6565;
+  font-size: 14px;
+}
+
+.dropdown-menu > .list-group-item:hover {
+  background-color: #fff;
+}
+.dropdown-menu li:hover {
+  text-decoration: underline;
+}
+
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
