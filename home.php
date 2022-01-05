@@ -13,103 +13,148 @@
 </head>
 
 <body>
+    <?php
+        //Trước khi cho người dùng xâm nhập vào bên trong phải ktra Thẻ Làm việc
+        session_start();
+        if(!isset($_SESSION['isLoginOK'])){
+            header("location:login.php");
+        }
+    ?>
     <header>
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-                <div class="container-fluid" style="width: 1100px">
-                    <a class="nav-logo" href="#">
-                        <button type="button" class="btn btn-primary" onclick="window.location.href='home.html'">
-                            <i class="bi bi-linkedin" style="color: rgb(248, 247, 247);">
-                                <link rel="stylesheet" href="home.html">
-                            </i>
+            <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top ms-3" >
+                <div class="container-fluid ms-5">
+                    <a class="navbar-brand ms-5" href="home.php">
+                        <button type="button" class="btn btn-primary ms-5">
+                                <i class="bi bi-linkedin" style="color: rgb(248, 247, 247);">
+                                </i>
                         </button>
                     </a>
-                    <nav class="navbar navbar-light bg-white">
-                        <div class="container-fluid">
-                            <div class="input-group flex-nowrap">
-                                <span class="input-group-text" id="addon-wrapping"><i class="bi bi-search"></i></span>
-                                <input type="text" class="form-control" placeholder="Search" aria-label="Username"
-                                    aria-describedby="addon-wrapping">
-                            </div>
+                    <div class="search" style="display: inline;">
+                        <div style="display: inline-flex;">
+                            <span class="input-group-text" id="addon-wrapping"><i class="bi bi-search"></i></span>
+                            <input type="text" class="form-control" placeholder="Search for jobs, companies..." aria-label="Username" aria-describedby="addon-wrapping">
                         </div>
-                    </nav>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mb-2 mb-lg-0">
-                            <li class="nav-item" style="margin-left: 145px;">
-                                <a class="nav-link" href="home.html">
-                                    <i class="bi bi-house-door-fill" style="margin-left: 10px;">
-                                        <div style="font-style: normal;">Home</div>
-                                    </i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <i class="bi bi-people-fill" style="margin-left: 25px;">
-                                        <div style="font-style: normal;">My Network</div>
-                                    </i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Jobs.html">
-                                    <i class="bi bi-briefcase-fill" style="margin-left: 5px;">
-                                        <div style="font-style: normal;">Jobs</div>
-                                    </i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Messaging.html">
-
-                                    </i><i class="bi bi-send-fill" style="margin-left: 20px;">
-                                        <div style="font-style: normal;">Messaging</div>
-                                    </i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Notifications.html">
-
-                                    </i><i class="bi bi-bell-fill" style="margin-left: 20px;">
-                                        <div style="font-style: normal;">Notifications</div>
-                                    </i>
-                                </a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="bi bi-person-circle"></i>
-                                    <div></div>
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                            <hr>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="bi bi-grid-3x3-gap"></i>
-                                </a>
-
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                        </ul>
                     </div>
-                </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse ms-5" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-5 mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="home.php">
+                                <i class="bi bi-house-door-fill" style= "font-size: 18px;">
+                                    <div class="text-nav" style="font-style: normal;">Home</div>
+                                </i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="bi bi-people-fill" style="font-size: 18px;">
+                                    <div class="text-nav" style="font-style: normal;">My Network</div>
+                                </i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Jobs.html">
+                                <i class="bi bi-briefcase-fill" style="font-size: 18px;">
+                                    <div class="text-nav" style="font-style: normal;">Jobs</div>
+                                </i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Messaging.html">
+                                <i class="bi bi-chat-dots-fill" style="font-size: 18px;">
+                                    <div class="text-nav" style="font-style: normal;">Messaging</div>
+                                </i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Notifications.html">
+                                <i class="bi bi-bell-fill" style="font-size: 18px;">
+                                    <div class="text-nav" style="font-style: normal;">Notifications</div>
+                                </i>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown" style="border-right: 1px solid rgb(238, 221, 221);">
+                            <a class="nav-link me-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person-circle" style="font-size: 18px;"></i>
+                                    <div class="text-nav" style="font-style: normal;">Me<i class="bi bi-caret-down-fill"></i>
+                                    </div>
+                                </i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="width: 240px;">
+                                <div class="my-sidebar list-group bg-white">
+                                    <div class="feed-identity-module m-2" style="display: inline;">
+                                        <a href="Profile.php" class="profile" style="display: inline;">
+                                            <img class="my-avartar col-md-3" src="assets/images/my-avartar.png" style="display: inline;">
+                                            <span class="identity-name t-black text-center col-md-9">
+                                                <?php
+                                                    if(isset($_SESSION['isLoginOK'])){
+                                                        echo "<a class='nav-link'>{$_SESSION['isLoginOK']}</a>";
+                                                    }
+                                                ?>
+                                            </span>
+                                        </a>
+                                        <div class="list-group-item mt-2" style="border-radius: 16px; color: #0a66c2;">
+                                            <a href="Profile.php" class="" style="text-decoration: none;">
+                                                <div class="row text-align-center feed-identity">
+                                                    <span class="text-center" style="color: blue; font-size: 14px;">View Profile</span> 
+                                                </div>
+                                            </a>
+                                        </div>    
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <p style="color: black;">Account</p>
+                                        <a class="text-decoration-none" href="" style="font-size: 14px; color: #7e6565;">
+                                            <i class="bi bi-gem bg-warning"></i>
+                                                Try Premium for free
+                                        </a>
+                                    <ul class="list-unstyled"> 
+                                        <li class="mt-2"><a href="" class="text-decoration-none">Settings & Privacy</a></li>
+                                        <li class="mt-2"><a href="" class="text-decoration-none">Help</a></li>
+                                        <li class="mt-2"><a href="" class="text-decoration-none">Language</a></li>
+                                    </ul>
+                                </div>
+                                <div class="list-group-item">
+                                    <p style="color: black;">Manage</p>
+                                    <ul class="list-unstyled"> 
+                                        <li class="mt-2"><a href="" class="text-decoration-none">Posts & Activity</a></li>
+                                        <li class="mt-2"><a href="" class="text-decoration-none">Jobs posting Account</a></li>
+                                    </ul>
+                                </div>
+                                <div class="ms-3">
+                                    <a href="index.php" class="signout text-decoration-none">
+                                        Sign Out
+                                    </a>
+                                </div>
+                                
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="bi bi-grid-3x3-gap-fill" style="font-size: 18px;"></i>
+                                    <div class="text-nav" style="font-style: normal;">Work<i class="bi bi-caret-down-fill"></i></div>
+                                </i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="bi bi-calendar2-minus-fill" style="font-size: 18px;"></i>
+                                    <div class="text-nav" style="font-style: normal;">Post a job</div>
+                                </i>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                    </div>
+            </div>
             </nav>
         </div>
+        
     </header>
-    <main class="container-fluid" style="background: #f3f2ef; margin-top: 76px;">
+    <main class="container-fluid" style="background: #f3f2ef; margin-top: 68px;">
         <div class="row" style="height: 24px">
             <div class="col-md-12"></div>
         </div>
@@ -117,10 +162,10 @@
             <div class="sidebar col-md-2 ps-2">
                 <div class="my-sidebar list-group bg-white">
                     <div class="feed-identity-module">
-                        <a href="#" class="profile">
+                        <a href="Profile.php" class="profile">
                             <div class="avartar col-md-12 text-center" style="background-image: url('https://static-exp1.licdn.com/sc/h/55k1z8997gh8dwtihm11aajyq');">
                                 <img class="my-avartar col-md-5 mt-3"
-                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNL_ZnOTpXSvhf1UaK7beHey2BX42U6solRA&usqp=CAU" />
+                                    src="assets/images/my-avartar.png" />
                             </div>
                             <p class="identity-name mt-3 t-black text-center">
                                 Phạm Văn Phú
@@ -237,7 +282,7 @@
                     <div class="col-md-12 m-2 ">
                         <div class="row share-actor">
                             <div class="avt-actor col-md-2">
-                                <a href=""><img class="img-actor" src="https://media-exp1.licdn.com/dms/image/C4D03AQHqRRhVsnaziA/profile-displayphoto-shrink_100_100/0/1626063510328?e=1645660800&v=beta&t=3kDguR2rl7aGCMW6BevlHsA7ReK05VlWbKD2dMOsQww" alt=""></a>
+                                <a href=""><img class="img-actor" src="assets/images/Bill Gate.png" alt=""></a>
                             </div>
                             <div class="col-md-10">
                                 <span>
@@ -253,7 +298,7 @@
                                 <p>Understanding how the connections in our brains give rise to consciousness and our ability to learn may help lead to great breakthroughs in the way we solve the world’s hardest problems.</p>
                             </div>
                             <div class="row content-post">
-                                <video src="/assets/Videos/The Truck- Bill Gates.mp45"  autoplay controls></video>
+                                <video src="/assets/Videos/The Truck- Bill Gates.mp4"  autoplay controls></video>
                             </div>
                             <div class="row status mt-1 mb-1">
                                 <span>
@@ -267,13 +312,12 @@
                             </div>
                             <div class="row-feel">
                                 <span>
-                                    <button href="" class="btn-status">
-                                        <i class="bi bi-hand-thumbs-up"></i> Like
-                                        <i class="nav-arrow-down ti-angle-down"></i>
+                                    <button href="" id="btlike1" class="btn-status">
+                                        <i class="bi bi-hand-thumbs-up-fill"></i> Like
                                     </button>
                                     <span class="row-like">
                                         <span >
-                                            <button href="" class="btn-sublike">
+                                            <button href="" class="btn-sublike" onclick="document.getElementById('btlike1').style.color='blue'">
                                                 <i class="bi bi-hand-thumbs-up-fill" style="color: blue;"></i> 
                                             </button>
                                         </span>
@@ -310,6 +354,7 @@
                                     </button>
                                 </span>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -325,12 +370,19 @@
                                 <span>Spotify
                                     <span style="color: rgb(96, 131, 128); font-size: 12px">8,996 Folowers</span>
                                 </span>
+                            </a>
                                 <span style="float: right; line-height: 40px; margin-right: 5px;">
-                                    <button href="" class="btn-status" style="color: blue;">
+                                    <button href="" id="follow1" class="btn-status" onclick="followfunc1(this, 'green')" style="color: blue;">
                                         <i class="bi bi-plus-circle"></i>  Follow
                                     </button>
+                                    <script>
+                                        function followfunc1(getElementById,clr) {
+                                          document.getElementById("follow1").innerHTML = "√  Following";
+                                          getElementById.style.color = clr;
+                                        }
+                                        </script>
                                 </span>
-                            </a>
+                            
                             <hr>
                         </div>
                         <div class="list-friends mt-2">
@@ -339,24 +391,36 @@
                                 <span>Nike
                                     <span style="color: rgb(96, 131, 128); font-size: 12px">996 Folowers</span>
                                 </span>
-                                <span style="float: right; line-height: 40px; margin-right: 5px;">
-                                    <button href="" class="btn-status" style="color: blue;">
-                                        <i class="bi bi-plus-circle"></i>  Follow
-                                    </button>
-                                </span>
                             </a>
+                            <span style="float: right; line-height: 40px; margin-right: 5px;">
+                                <button href="" id="follow2" class="btn-status" onclick="followfunc2(this, 'green')" style="color: blue;">
+                                    <i class="bi bi-plus-circle"></i>  Follow
+                                </button>
+                                <script>
+                                    function followfunc2(getElementById,clr) {
+                                      document.getElementById("follow2").innerHTML = "√  Following";
+                                      getElementById.style.color = clr;
+                                    }
+                                    </script>
+                            </span>
                             <hr>
                         </div>
                         <div class="list-friends mt-2">
                             <a class="col-md-2" href="" style="text-decoration: none; color: #000;">
                                 <img class="avt-friend" src="https://media-exp1.licdn.com/dms/image/C4E0BAQEVb0ZISWk8vQ/company-logo_100_100/0/1519896425167?e=1648684800&v=beta&t=o3QNgA9vjTOVQvMsyggm5u2vCQJMpy6koaHtMt_xaf0" alt="">
                                 <span>Netflix</span>
-                                <span style="float: right; line-height: 40px; margin-right: 5px;">
-                                    <button href="" class="btn-status" style="color: blue;">
-                                        <i class="bi bi-plus-circle"></i>  Follow
-                                    </button>
-                                </span>
-                            </a>
+                            </a>                 
+                            <span style="float: right; line-height: 40px; margin-right: 5px;">
+                                <button href="" id="follow3" class="btn-status" onclick="followfunc3(this, 'green')" style="color: blue;">
+                                    <i class="bi bi-plus-circle"></i>  Follow
+                                </button>
+                                <script>
+                                    function followfunc3(getElementById,clr) {
+                                      document.getElementById("follow3").innerHTML = "√  Following";
+                                      getElementById.style.color = clr;
+                                    }
+                                    </script>
+                            </span>
                         </div> 
                         <div class="list-group-item mt-2">
                             <a href="#" class="list-identity">
@@ -406,13 +470,12 @@
                             </div>
                             <div class="row-feel">
                                 <span>
-                                    <button href="" class="btn-status">
-                                        <i class="bi bi-hand-thumbs-up"></i> Like
-                                        <i class="nav-arrow-down ti-angle-down"></i>
+                                    <button href="" id="btlike2" class="btn-status">
+                                        <i class="bi bi-hand-thumbs-up-fill"></i> Like
                                     </button>
                                     <span class="row-like">
                                         <span >
-                                            <button href="" class="btn-sublike">
+                                            <button href="" class="btn-sublike" onclick="document.getElementById('btlike2').style.color='blue'">
                                                 <i class="bi bi-hand-thumbs-up-fill" style="color: blue;"></i> 
                                             </button>
                                         </span>
@@ -452,7 +515,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="feed-share list-group bg-white row mt-2">
+                <div class="feed-share list-group bg-white row mt-2 mb-5">
                     <div class="col-md-12 m-2 ">
                         <div class="row share-actor">
                             <div class="avt-actor  col-md-2">
@@ -474,7 +537,7 @@
                             <div class="row content-post">
                                 <a href="#" class="list-identity">
                                     <div class="col-md-12 feed-module pb-2" style="background-color: rgb(253, 242, 242);">
-                                            <img style="width: 100%; padding: auto;" src="https://media-exp1.licdn.com/dms/image/sync/C4E27AQG46jzO1xMhgw/articleshare-shrink_800/0/1640314052145?e=1640419200&v=beta&t=WqbeOawR2QebU8U3DFj3Zz5oZcV1p6WMWLwIu7ZtvE8" alt="">
+                                            <img style="width: 100%; padding: auto;" src="assets/images/bill-gate books.png" alt="">
                                             <span>5 books I loved reading this year</span> 
                                         </div>
                                     </a>
@@ -491,13 +554,12 @@
                             </div>
                             <div class="row-feel">
                                 <span>
-                                    <button href="" class="btn-status">
-                                        <i class="bi bi-hand-thumbs-up"></i> Like
-                                        <i class="nav-arrow-down ti-angle-down"></i>
+                                    <button href="" id="btlike3" class="btn-status">
+                                        <i class="bi bi-hand-thumbs-up-fill"></i> Like
                                     </button>
                                     <span class="row-like">
                                         <span >
-                                            <button href="" class="btn-sublike">
+                                            <button href="" class="btn-sublike" onclick="document.getElementById('btlike3').style.color='blue'">
                                                 <i class="bi bi-hand-thumbs-up-fill" style="color: blue;"></i> 
                                             </button>
                                         </span>
@@ -575,7 +637,7 @@
                     <div class="list-group-item">
                         <div class="row promote">
                             <div class="avt-actor  col-md-2">
-                                <a href=""><img class="img-promote" src="https://media-exp1.licdn.com/dms/image/C4D0EAQH2xCC4Wg_XnQ/rightRail-logo-shrink_100_100/0/1631007489046?e=1640426400&v=beta&t=15JE6k4b02CR221N-W_vzdzDQvdu3D6uYpCRSavo_Wk" alt=""></a>
+                                <a href=""><img class="img-promote" src="assets/images/Learning.png" alt=""></a>
                             </div>
                             <div class="col-md-9 ms-4" style="display: inline;">
                                 <span class="name-promote">
@@ -588,7 +650,7 @@
                         </div>
                         <div class="row promote">
                             <div class="avt-actor  col-md-2">
-                                <a href=""><img class="img-promote" src="https://media-exp1.licdn.com/dms/image/C560EAQHsb5Dj3yUo4Q/rightRail-logo-shrink_200_200/0/1630999185456?e=1640426400&v=beta&t=AruWWB0z9lTDSjFF_JKgAlErSYPxWJO8FAdLRFmqxCE" alt=""></a>
+                                <a href=""><img class="img-promote" src="assets/images/Rmit.png" alt=""></a>
                             </div>
                             <div class="col-md-9 ms-4" style="display: inline;">
                                 <span class="name-promote">
@@ -601,7 +663,7 @@
                         </div>
                         <div class="row promote">
                             <div class="avt-actor  col-md-2">
-                                <a href=""><img class="img-promote" src="https://media-exp1.licdn.com/dms/image/C560EAQGwD2NY88oWAA/rightRail-logo-shrink_100_100/0/1631005475475?e=1640426400&v=beta&t=wGwvNsdfH7Mr9709aslivtxj7SFG8tctZEAiGBFMdes" alt=""></a>
+                                <a href=""><img class="img-promote" src="assets/images/Go agile.png" alt=""></a>
                             </div>
                             <div class="col-md-9 ms-4" style="display: inline;">
                                 <span class="name-promote">
@@ -637,10 +699,36 @@
                 </div>
             </div>
         </div>
+
+        <button class="open-button" onclick="openForm()">Open Form</button>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
 </body>
 
 </html>
