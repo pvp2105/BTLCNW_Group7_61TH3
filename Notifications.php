@@ -13,6 +13,13 @@
 </head>
 
 <body>
+<?php
+        //Trước khi cho người dùng xâm nhập vào bên trong phải ktra Thẻ Làm việc
+        session_start();
+        if(!isset($_SESSION['isLoginOK'])){
+            header("location:Acount/login.php");
+        }
+    ?>
     <header>
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top ms-3" >
@@ -42,28 +49,28 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="mynetwork.html">
+                            <a class="nav-link" href="mynetwork.php">
                                 <i class="bi bi-people-fill" style="font-size: 18px;">
                                     <div class="text-nav" style="font-style: normal;">My Network</div>
                                 </i>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Jobs.html">
+                            <a class="nav-link" href="Jobs.php">
                                 <i class="bi bi-briefcase-fill" style="font-size: 18px;">
                                     <div class="text-nav" style="font-style: normal;">Jobs</div>
                                 </i>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Messaging.html">
+                            <a class="nav-link" href="Messaging.php">
                                 <i class="bi bi-chat-dots-fill" style="font-size: 18px;">
                                     <div class="text-nav" style="font-style: normal;">Messaging</div>
                                 </i>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Notifications.html">
+                            <a class="nav-link" href="Notifications.php">
                                 <i class="bi bi-bell-fill" style="font-size: 18px;">
                                     <div class="text-nav" style="font-style: normal;">Notifications</div>
                                 </i>
@@ -82,11 +89,11 @@
                                         <a href="Profile.php" class="profile" style="display: inline;">
                                             <img class="my-avartar col-md-3" src="assets/images/my-avartar.png" style="display: inline;">
                                             <span class="identity-name t-black text-center col-md-9">
-                                                <!-- <?php
+                                                 <?php
                                                     if(isset($_SESSION['isLoginOK'])){
                                                         echo "<a class='nav-link'>{$_SESSION['isLoginOK']}</a>";
                                                     }
-                                                ?> -->
+                                                ?> 
                                             </span>
                                         </a>
                                         <div class="list-group-item mt-2" style="border-radius: 16px; color: #0a66c2;">
@@ -155,43 +162,39 @@
             <div class="sidebar col-md-2 ps-2">
                 <div class="my-sidebar sub-group list-group bg-white mt-2">
                     <div class="list-group-item">
-                        <div>long</div>
+                        <div class="row">
+                            <h6>Notifications</h6>
+                            <p style="opacity: 0.5;">You’re all caught up! Check back later for new notifications</p>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <p style="opacity: 0.5;">Improve your notifications</p>
+                            <a href="" style="text-decoration: none; color: rgb(37, 15, 235);">View Setting</a>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="main col-md-5">
                 <div class="post list-group-item bg-white row ">
                     <div class="col-md-12 m-2">
-                            <div class="Text">
-                                <h3 class="Start">Recent job searches</h3>
-                                <p class="Start">Clear</p>
+                        <div class="row directory mb-3">                           
+                            <div class="avt-actor col-md-2">
+                                <a href=""><img src="assets/images/img2_notification.png" alt=""style="width:60px"></a>
                             </div>
-                            <div style="margin-top: 15px;">
-                                <span>hfush</span>
-                                <span style="color: green;">(0 new)</span>
-                                <p style="opacity: 0.5;">Vietnam</p>
+                            <div class="col-md-10">
+                            <h6>You're all caught up!</h6>
+                                <div>
+                                <a href="" style="text-decoration: none; color: rgb(37, 15, 235);">Discover new conversations in your network</a>
+                                </div>
                             </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="news col-md-3 ">
                 <div class="my-sidebar list-group bg-white">
                     <div class="list-group-item">
-                        <div class="col-md-12 m-2">
-                            <h5>Ways to prepare</h5>
-                        </div>
-                        <div class="list-group-item">
-                            <div class="row company-job-update">
-                                <div class="col-md-2">
-                                    
-                                </div>
-                                <div class="col-md-10">
-                                    <h5 style="color: blue;">Best practices</h5>
-                                    <span>Get the most out of your job search and start  out to recruiters</span>
-                                </div>
-                            </div>
-                            
-                        </div>
+                    <img src="assets/images/img1_notification.jpg" alt="" style="width:100%">
                     </div>
                 </div>
                 <div class="my-sidebar sub-group list-group mt-1">
