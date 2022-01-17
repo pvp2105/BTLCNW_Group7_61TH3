@@ -17,7 +17,7 @@
         //Trước khi cho người dùng xâm nhập vào bên trong phải ktra Thẻ Làm việc
         session_start();
         if(!isset($_SESSION['isLoginOK'])){
-            header("location:Acount/login.php");
+            header("location:login.php");
         }
     ?>
     <header>
@@ -194,11 +194,6 @@
                             <i class="bi bi-gear-fill"></i>
                             <span>Application Settings</span>
                         </div>
-                    </div>
-                </div>
-                <div class="my-sidebar sub-group list-group bg-white mt-2">
-                    <div class="list-group-item">
-                        <div>long</div>
                     </div>
                 </div>
             </div>
