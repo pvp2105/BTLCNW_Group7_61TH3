@@ -1,0 +1,234 @@
+.navbar .form-control {
+  font-size: 14px;
+  width: 280px;
+  background-color: #eef3f8;
+  border-color: white;
+}
+.navbar .input-group-text {
+  background-color: #eef3f8;
+  border-color: white;
+}
+
+.navbar-nav {
+  margin-left: auto;
+  min-height: 52px;
+}
+.navbar-nav .nav-item {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 18px;
+  text-align: center;
+}
+.navbar-nav .text-nav {
+  align-items: center;
+  font-size: 12px;
+  line-height: 18px;
+}
+.dropdown-menu .list-group-item:hover {
+  background-color: #f3f2ef;
+}
+
+.text-decoration-none {
+  color: #7e6565;
+  font-size: 14px;
+}
+
+.dropdown-menu > .list-group-item:hover {
+  background-color: #fff;
+}
+.dropdown-menu li:hover {
+  text-decoration: underline;
+}
+
+.my-avartar {
+  border-radius: 50%;
+  font-size: 13.33px;
+  width: 152px;
+  height: 152px;
+}
+.identity-name {
+  color: black;
+  font-size: 24px;
+}
+.profile {
+  text-decoration: none;
+  color: black;
+}
+.avartar {
+  background-position: 50% 50%;
+  background-size: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.profile:hover p {
+  text-decoration: underline;
+}
+
+.text-address {
+  font-size: 14px;
+  color: rgb(55, 110, 110);
+}
+.identity-name {
+  line-height: 17px;
+  font-weight: 500;
+}
+
+.btn-topic {
+  background-color: white;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 28px;
+  border: 1px solid rgb(240, 230, 230);
+  line-height: 8px;
+  padding: 6px 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.btn-not {
+  background-color: white;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid white;
+  line-height: 8px;
+  padding: 6px 16px;
+  font-weight: 600;
+  text-align: center;
+}
+.text-profile a {
+  text-decoration: none;
+}
+
+.text-profile a:hover .btn-topic {
+  background-color: rgb(240, 230, 230);
+}
+
+.past-position a {
+  text-decoration: none;
+}
+.past-position a:hover .btn-topic {
+  background-color: rgb(240, 230, 230);
+}
+.past-position a:hover .btn-not {
+  background-color: rgb(240, 230, 230);
+}
+
+.bi-chevron-down {
+  font-size: 20px;
+  line-height: 28px;
+}
+.text-strength {
+  color: #c79191;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.img-promote {
+  width: 100%;
+}
+
+.my-dashboard .dashboard {
+  text-decoration: none;
+}
+.my-dashboard a:hover {
+  text-decoration: underline;
+}
+.text-mode {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+}
+.row-news ul a {
+  text-decoration: none;
+  color: #000;
+}
+
+.row-news .content-new:hover {
+  background-color: rgb(197, 218, 216);
+}
+.row-news .content-new:hover a {
+  text-decoration: underline;
+}
+
+.img-promote {
+  width: 64px;
+  height: 64px;
+}
+
+.name-promote:hover {
+  text-decoration: underline;
+}
+
+.my-news a {
+  text-decoration: none;
+  color: rgb(71, 105, 101);
+}
+
+.see-act {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.avt-friend {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.logo-footer {
+  font-size: 20px;
+  font-weight: 500;
+  color: blue;
+  text-align: center;
+}
+.text-footer {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.list-unstyled a {
+  display: inline;
+  font-size: 12px;
+  text-align: left;
+  color: #8a6868;
+}
+
+.list-unstyled li:hover {
+  text-decoration: underline;
+}
+
+.list-unstyled li a:hover {
+  color: blue;
+}
+
+.list-footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.list-footer li {
+  display: flex;
+  margin: 0 10px;
+  text-align: left;
+}
+.list-footer a {
+  display: inline;
+  font-size: 12px;
+  text-align: left;
+  color: #8a6868;
+}
+
+.list-footer li:hover {
+  text-decoration: underline;
+}
+
+.list-footer li a:hover {
+  color: blue;
+}
