@@ -69,21 +69,21 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Jobs.html">
+                                <a class="nav-link" href="Jobs.php">
                                     <i class="bi bi-briefcase-fill" style="font-size: 18px;">
                                         <div class="text-nav" style="font-style: normal;">Jobs</div>
                                     </i>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Messaging.html">
+                                <a class="nav-link" href="Messaging.php">
                                     <i class="bi bi-chat-dots-fill" style="font-size: 18px;">
                                         <div class="text-nav" style="font-style: normal;">Messaging</div>
                                     </i>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Notifications.html">
+                                <a class="nav-link" href="Notifications.php">
                                     <i class="bi bi-bell-fill" style="font-size: 18px;">
                                         <div class="text-nav" style="font-style: normal;">Notifications</div>
                                     </i>
