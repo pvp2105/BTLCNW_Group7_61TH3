@@ -18,7 +18,7 @@
         //Trước khi cho người dùng xâm nhập vào bên trong phải ktra Thẻ Làm việc
         session_start();
         if(!isset($_SESSION['isLoginOK'])){
-            header("location:Acount/login.php");
+            header("location:login.php");
         }
     ?>
     <header>
