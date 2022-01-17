@@ -9,6 +9,8 @@
         crossorigin="anonymous"/> 
     <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"/>
     <link rel="stylesheet" href="css/index.css">
+	<link rel="icon" href="assets/images/logo-Linkedin.png">
+
   </head>
 
   <body>
@@ -16,7 +18,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-white" >
                 <div class="container-fluid ms-5">
-                    <a class="navbar-brand col-md-5" href="home.html">
+                    <a class="navbar-brand col-md-5" href="index.php">
                         <button type="button" class="btn btn-white ms-5" style="color: #0a66c2;font-weight: 700; font-size: 25px;">
                                 Linked<i class="bi bi-linkedin">
                                 </i>
@@ -208,7 +210,7 @@
     </div>
 	<div class="row mt-4 ms-5" style="padding: 70px 0;">
         <section class="col-md-3 ms-5 mt-5 connect">
-            <video class="video-index" src="assets/videos/Let’s Step Forward - LinkedIn.mp41" controls autoplay ></video>
+            <video class="video-index" src="assets/videos/Let’s Step Forward - LinkedIn.mp4" controls autoplay ></video>
         </section>
         <section class="col-md-8 step" style="background-color: rgb(219, 228, 241);">
             <h2 class="text-step mt-5">Let's step forward</h2>
