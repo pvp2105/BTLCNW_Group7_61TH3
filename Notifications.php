@@ -125,7 +125,7 @@
                                     </ul>
                                 </div>
                                 <div class="ms-3">
-                                    <a href="index.php" class="signout text-decoration-none">
+                                    <a href="signout.php" class="signout text-decoration-none">
                                         Sign Out
                                     </a>
                                 </div>
