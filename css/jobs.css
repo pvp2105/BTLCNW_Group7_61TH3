@@ -1,7 +1,41 @@
 .col-md-12{
     padding: 0;
 }
-
+.navbar .form-control {
+    font-size: 14px;
+    width: 280px;
+    background-color: #eef3f8;
+    border-color: white;
+  }
+  .navbar .input-group-text {
+    background-color: #eef3f8;
+    border-color: white;
+  }
+  
+  .navbar-nav {
+    margin-left: auto;
+    min-height: 52px;
+  }
+  .navbar-nav .nav-item {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 18px;
+    text-align: center;
+  }
+  .navbar-nav .text-nav {
+    align-items: center;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .dropdown-menu .list-group-item:hover {
+    background-color: #f3f2ef;
+  }
+  .profile {
+    text-decoration: none;
+    color: black;
+  }
 main{
     top: 0;
     margin-top: 76px;
